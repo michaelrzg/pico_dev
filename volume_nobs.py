@@ -119,7 +119,7 @@ devices = AudioUtilities.GetSpeakers()
 interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 volume = cast(interface, POINTER(IAudioEndpointVolume))
 
-# pot1=ADC(31)
+# pot1=ADC(Pin(28))
 pot1Value = 0  # this nob will be master volume
 prevPot1 = 0
 # pot2=ADC(27)
